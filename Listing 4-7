@@ -1,0 +1,9 @@
+/*
+  Fix the Select List styling : Same rounded corners and border color
+*/
+#P28_CUST_STATE-button
+{
+ -webkit-border-radius : 0em 0em 0.4em 0.4em;
+ border-radius         : 0em 0em 0.4em 0.4em;
+ border-color          : #999;
+}

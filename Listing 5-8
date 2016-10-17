@@ -1,0 +1,11 @@
+select '<img src="http://maps.googleapis.com/maps/api/staticmap?'       ||
+       'size=&P0_DEVICE_WIDTH.x&P0_DEVICE_HEIGHT.&maptype=roadmap'      ||
+       listagg('&markers=color:blue|label:'||substr(cust_last_name,1,1) ||'|'||
+               replace(cust_street_address1 ||
+                       ','||cust_city||'+'  ||
+                        cust_state||cust_postal_code
+                      ,' ','+')
+              ,'|') within group (order by cust_state)                  ||
+       '&sensor=false" />'
+       as "Address"
+from demo_customers

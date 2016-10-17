@@ -1,0 +1,9 @@
+<span class="ui-li-desc">
+  <span style="font-weight:bold">
+    #CUST_NAME#
+  </span>
+  <br/>
+  #CUST_STREET_ADDRESS#
+  <br/>
+  #CUST_CITY_ADDRESS#
+</span>

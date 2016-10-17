@@ -1,0 +1,10 @@
+/* Delete Dialog Tweaks
+*/
+div.ui-simpledialog-controls a
+{
+  margin : 1em;
+}
+
+a#Delete {
+  background: -webkit-linear-gradient(top, #DC7679 0%,#DC7679 49%, #CD2A27 50%, #C92A29 100%);
+}

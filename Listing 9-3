@@ -1,0 +1,17 @@
+<script>
+(function loadCordova() {
+
+  //Initialize our user agent string to lower case.
+  var uagent = navigator.userAgent.toLowerCase();
+
+    if (uagent.search("android") > -1) {
+       document.write('<script type="text/javascript" ' +
+                      'src="#WORKSPACE_IMAGES#cordova.android.js">' +
+                      '<//script>');
+    } else if (uagent.search("iphone") > -1) {
+       document.write('<script type="text/javascript" ' +
+                     'src="#WORKSPACE_IMAGES#cordova.ios.js">' +
+                      '<//script>');
+    }
+})();
+</script>

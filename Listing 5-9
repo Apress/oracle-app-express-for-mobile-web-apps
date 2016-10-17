@@ -1,0 +1,19 @@
+declare
+ cursor productsales is
+  select p.product_name   as label,
+         p.product_id||','||SUM(i.quantity * i.unit_price) as data,
+         count(*) over () total
+  from   demo_product_info p
+  left outer join demo_order_items i on i.product_id = p.product_id
+  group by p.product_name, p.product_id
+  order by p.product_id;
+begin
+  sys.htp.prn('[');
+  for r in productsales loop
+    sys.htp.prn('{"label":"'||r.label||'","data":[['||r.data||']]}');
+    if productsales%rowcount < r.total
+    then sys.htp.prn(',');
+    end if;
+end loop;
+  sys.htp.prn(']');
+end;

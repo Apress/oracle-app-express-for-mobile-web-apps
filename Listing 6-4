@@ -1,0 +1,46 @@
+/* Define the icon sizes and locations - assuming your tab navigation region has the Static ID set
+to "footer-tabs"
+*/
+#footer-tabs .ui-btn .ui-icon
+{
+ width                 : 30px  !important;
+ height                : 30px  !important;
+ margin-left           : -15px !important;
+ margin-top            : -3px  !important;
+ box-shadow            : none  !important;
+ -moz-box-shadow       : none  !important;
+ -webkit-box-shadow    : none  !important;
+ -webkit-border-radius : none  !important;
+ border-radius         : none  !important;
+ background-size       : 22px 22px !important;
+}
+
+/* Define a light and smaller font size on the tabs
+*/
+#footer-tabs .ui-btn .ui-btn-text
+{
+ font-size   : 11px;
+ font-weight : lighter;
+}
+
+/* Define the icons for the tabs - upload your own favourite icons first
+*/
+#footer-tabs .ui-block-a .ui-icon
+{
+ background : url(#APP_IMAGES#hospital.png) 50% 50% no-repeat;
+}
+
+#footer-tabs .ui-block-b .ui-icon
+{
+ background : url(#APP_IMAGES#address_book.png) 50% 50% no-repeat;
+}
+
+#footer-tabs .ui-block-c .ui-icon
+{
+ background : url(#APP_IMAGES#prize_winner.png) 50% 50% no-repeat;
+}
+
+#footer-tabs .ui-block-d .ui-icon
+{
+ background: url(#APP_IMAGES#edit_notes.png) 50% 50% no-repeat;
+}

@@ -1,0 +1,15 @@
+div#header span.ui-btn-inner
+{
+ padding : 0px 6px 0px 6px;
+}
+
+a#header-delete
+{
+ right : 50px;
+}
+
+div#header img
+{
+ width  : 27px;
+ height : 27px;
+}

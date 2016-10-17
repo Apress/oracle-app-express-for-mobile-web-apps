@@ -1,0 +1,9 @@
+<div class="ui-grid-a apex-grid-debug">
+  <div class="ui-block-a">
+    ..content..
+  </div>
+  <div class="ui-block-b">
+     ..content..
+</div>
+  .. more divs with class "ui-block-a"
+</div>

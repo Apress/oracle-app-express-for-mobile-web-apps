@@ -1,0 +1,7 @@
+select null                           as link,
+       p.product_name                 as product,
+       SUM(i.quantity * i.unit_price) as sales
+from   demo_product_info p
+       left outer join demo_order_items i on i.product_id = p.product_id
+group  by p.product_name
+order  by 3 desc nulls last

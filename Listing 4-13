@@ -1,0 +1,17 @@
+/* Reposition the Products/Order Items List View
+*/
+#orderItems_jqm_list_view
+{
+  margin : 0px;
+}
+
+/* Change the looks of the "No Data Found" message
+*/
+li.apex-no-data-found
+{
+  background-image : none;
+  color            : white;
+  background-color : #3B5998;
+  text-shadow      : none;
+  text-align       : center;
+}

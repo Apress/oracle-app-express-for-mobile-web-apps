@@ -1,0 +1,12 @@
+select id
+,      user_name
+,      ctt.customer_id
+,      cust_first_name||' '||cust_last_name as cust_name
+,      rtrim(cust_street_address1||' '|| cust_street_address2) as cust_street_address
+,      cust_city||'  '||cust_state||cust_postal_code as cust_city_address
+,      start_date
+,      end_date
+,      done
+,      report
+from   demo_contacts ctt
+       join demo_customers cust on ctt.customer_id = cust.customer_id

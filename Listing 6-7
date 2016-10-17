@@ -1,0 +1,15 @@
+<div id="slidemenu">
+  <ul>
+    <li><a href="f?p=106:1:6062154931999::NO:::">Home</a></li>
+  </ul>
+  <h3>List Views</h3>
+  <ul>
+    <li><a href="some link">Customers</a></li>
+    <li><a href="some link>Products</a></li>
+  </ul>
+  <h3>Dashboard</h3>
+  <ul>
+    <li><a href="some link">Sales/Product</a></li>
+    <li><a href="some link">Pie Chart</a></li>
+  </ul>
+</div>

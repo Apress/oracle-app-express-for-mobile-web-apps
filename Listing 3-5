@@ -1,0 +1,13 @@
+$('div[data-role="content"]').waypoint(function(event, direction)
+{ if (direction=='down') {
+    // Mimic a click to fire loading
+    $('li.apex-load-more').hide();
+    $('li.apex-load-more').trigger('vclick');
+    // Recalculate waypoint position after 3 seconds - loading might take a while
+    setTimeout(function(){$.waypoints('refresh');$('li.apex-load-more').show();},3000);
+   } 
+},
+{
+  offset: 'bottom-in-view'  // bottom of the page
+, onlyOnScroll : true
+});

@@ -1,0 +1,4 @@
+$('a#P1_CUSTOMERLIST').append('<div class="badge">'+$v('P1_CUSTOMERCOUNT')+'</div>');
+$('a#P1_CALENDAR').append('<div class="badge">'+$v('P1_CONTACTCOUNT')+'</div>');
+$('a#P1_PRODUCTLIST').append('<div class="badge">'+$v('P1_PRODUCTCOUNT')+'</div>');
+$('div.badge').parent().next('.iconText').css('top','-40px');

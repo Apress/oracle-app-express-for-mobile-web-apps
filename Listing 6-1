@@ -1,0 +1,34 @@
+/* Set general look
+*/
+div#navigation
+{
+ text-align  : center;
+ color       : white;
+ text-shadow : none;
+ padding-left : 20px;
+}
+
+/* Set the size of the divs containing the springboard items
+*/
+div.container
+{
+ width      : 75px;
+ height     : 75px;
+ padding    : 10px;
+}
+
+/* Reduce image size to 57px
+*/
+div#navigation img
+{
+ width      : 57px;
+}
+
+/* Move icon Text a little upwards and use a smaller font
+*/
+p.iconText
+{
+ font-size  : 11px;
+ position   : relative;
+ top        : -15px;
+}

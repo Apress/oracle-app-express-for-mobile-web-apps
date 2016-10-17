@@ -1,0 +1,53 @@
+@media only screen and (max-device-width: 480px) {
+
+.m-NonDay
+{
+  color               : #919EAC;
+}
+
+.apex-calendar-has-data
+{
+  background-size     : 25%;
+  background-position : 49% 90%;
+}
+
+.m-Calendar
+{
+  font-size           : 130%;
+  position            : relative;
+  top                 : -35px;
+  border-spacing      : 1px;
+}
+
+.m-Calendar tr>td:first-child
+{
+  border-width        : 1px 1px 0px 1px;
+}
+
+.m-Calendar tr:last-child>td
+{
+  height              : 0px !important;
+  border-left-style   : none;
+  border-right-style  : none;
+  background-color    : #EEE;
+}
+
+.m-Calendar td
+{
+  padding             : 0px !important;
+  height              : 40px !important;
+}
+
+div.ui-content
+{
+  padding-top         : 5px;
+  padding-left        : 0px;
+  padding-right       : 0px;
+}
+
+div#footer td:first-child div
+{
+margin-left           : 10px;
+}
+
+}

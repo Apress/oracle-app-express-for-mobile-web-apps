@@ -1,0 +1,26 @@
+$('body').simpledialog2({
+    mode        : "button",
+    transition  : "slideup",
+    width       : "98%",
+    left        : "0px",
+    top         : "65%",
+    buttons     : {
+      'Delete Customer': {
+        click : function () {
+                apex.gPageContext$ = apex.jQuery.mobile.activePage;
+                apex.submit("DELETE");
+        },
+        icon  : false,
+        id    : "Delete",
+        theme : "a"
+      },
+      'Cancel': {
+        click: function () {
+          this.close();
+          apex.gPageContext$ = apex.jQuery.mobile.activePage;
+        },
+        icon  : false,
+        theme : "a"
+       } 
+    }
+});

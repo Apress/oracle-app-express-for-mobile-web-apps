@@ -1,0 +1,19 @@
+$('<div>').simpledialog2({
+    mode: 'blank',
+    headerText: 'Sort on',
+    headerClose: true,
+    themeHeader:'c',
+    themeInput:'c',
+    blankContentAdopt :true,
+    blankContent :
+'<div data-role="fieldcontain">'+
+'<fieldset id="RG_sorter" data-role="controlgroup" data-mini="true">'+
+'<input type="radio" name="sorter" id="FirstName" value="FirstName" onchange="sortOn(1);"/>'+
+'<label for="FirstName">First Name</label>'+
+'<input type="radio" name="sorter" id="LastName" value="LastName" onchange="sortOn(2);"/>'+
+'<label for="LastName">Last Name</label>'+
+'<input type="radio" name="sorter" id="City" value="City" onchange="sortOn(3);"/>'+
+'<label for="City">City</label>'+
+'</fieldset>'+
+'</div>'
+});

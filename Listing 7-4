@@ -1,0 +1,10 @@
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min--moz-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 240dpi) {
+
+  .ui-icon.ui-icon-ordering
+  {
+   background-image : url(#APP_IMAGES#ordering-36.png);
+   background-size  : 18px 18px;
+  }
+}

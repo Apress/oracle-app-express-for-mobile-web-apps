@@ -1,0 +1,10 @@
+/* misc */
+.ui-icon-check {
+        background-position:  -252px 50%;
+}
+.ui-icon-gear {
+        background-position:  -288px 50%;
+}
+.ui-icon-refresh {
+        background-position:  -324px 50%;
+}

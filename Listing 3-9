@@ -1,0 +1,7 @@
+function sortOn( pSelected ){
+ // 1=FirstName, 2=LastName, 3=City
+ // Set P27_ORDER_BY to the sort field and destroy the popup
+ $('#P27_ORDER_BY').val(pSelected);
+ apex.jQuery.mobile.sdCurrentDialog.close();
+ $('#P27_ORDER_BY').trigger('change');
+}

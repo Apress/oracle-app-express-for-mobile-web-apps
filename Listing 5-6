@@ -1,0 +1,3 @@
+$("div#myChart svg")
+    .attr("width" , "90%")
+    .attr("height", "90%");

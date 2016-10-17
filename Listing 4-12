@@ -1,0 +1,13 @@
+<div id="tick" class="ui-popup-container ui-popup-active"
+ style="position:absolute; top: 25%; left: 40%; z-index: 999; width:30%;
+        text-align:center;  max-width:150px">
+  <div data-role="popup" data-transition="fade" data-theme="a" data-position-to="window"
+       data-shadow="true" data-corners="true" class="ui-popup ui-body-a
+       ui-overlay-shadow ui-corner-all" style="padding:10%">
+    <img style="width:auto;height:auto;" src="#APP_IMAGES#tick.png">
+    <p>Saved</p>
+  </div>
+</div>
+<script>
+$('#tick').delay(1000).fadeOut(1000);
+</script>

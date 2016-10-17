@@ -1,0 +1,29 @@
+/* Tweak toggle settings
+*/
+select.yes_no + div.ui-slider-switch.ui-slider-mini
+{
+ width       : 100%;
+ height      : 34px;
+ top         : 0px;
+ margin-left : 0px;
+}
+
+select.yes_no + div.ui-slider.ui-slider-switch.ui-btn-corner-all,
+select.yes_no + div.ui-slider.ui-slider-switch.ui-btn-corner-all
+  span.ui-slider-label.ui-btn-corner-all
+{
+  -moz-border-radius    : 0em;
+  -webkit-border-radius : 0em;
+  border-radius         : 0em;
+}
+
+select.yes_no + div.ui-slider.ui-slider-switch.ui-btn-corner-all
+  a.ui-slider-handle
+{
+  -moz-border-radius    : 0.4em;
+  -webkit-border-radius : 0.4em;
+  border-radius         : 0.4em;
+  width                 : 30px;
+  height                : 30px;
+  margin-left           : -19px;
+}

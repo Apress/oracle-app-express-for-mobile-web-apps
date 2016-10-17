@@ -1,0 +1,6 @@
+order by  case :P27_ORDER_BY
+          when '1' then c.cust_first_name
+          when '2' then c.cust_last_name
+          when '3' then c.cust_city
+          else c.cust_last_name
+          end

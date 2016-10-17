@@ -1,0 +1,59 @@
+drop table demo_contacts
+/
+create table demo_contacts
+  (
+    id          number not null,
+    user_name   varchar2(50) not null,
+    customer_id number,
+    start_date  timestamp(6) with local time zone ,
+    end_date    timestamp(6) with local time zone ,
+    report      varchar2(4000) ,
+    done        varchar2(1) default 'N' not null ,
+    constraint demo_contacts_done check (done in ('Y','N' )) ,
+    constraint demo_contacts_pk primary key (id) ,
+    constraint demo_contacts_customers_fk foreign key (customer_id) 
+               references demo_customers (customer_id) 
+               on delete cascade enable
+  )
+/
+create index demo_contacts_customer_ix on demo_contacts
+  (customer_id
+) 
+/
+-- Generate 30 random contact moments with customers
+begin
+  for i in 1..30 loop
+    insert into demo_contacts
+    ( id
+    , user_name
+    , customer_id
+    , start_date
+    , end_date
+    , done
+    , report
+    )
+    ( select i
+      ,      NVL(:APP_USER, USER)
+      ,      round(dbms_random.value(1,7)) -- Pick any of the 7 Customers
+      ,      contact_date
+      ,      contact_date
+             + round(dbms_random.value(1,5))/48  -- Appointment lasts between .5 and 2.5 hours
+      ,      case when trunc(contact_date) < trunc(sysdate)
+             then 'Y'
+             else 'N'
+             end -- Contacts in the past are "Done"
+      ,      case when trunc(contact_date) < trunc(sysdate)
+             then  dbms_random.string('l', 50)
+             end -- Generate random 50 character string
+      from
+       ( select trunc( sysdate
+                     + dbms_random.value(-30,+30)
+                     )                              -- A date between 30 days before/after now
+                + round(dbms_random.value(7,18))/24 -- Any hour between 7AM and 6PM
+                as contact_date
+         from dual 
+       )
+    );
+  end loop;
+end; 
+/

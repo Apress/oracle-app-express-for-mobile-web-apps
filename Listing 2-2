@@ -1,0 +1,6 @@
+<script type="text/javascript">
+apex.jQuery(document).on("mobileinit", function() {
+  apex.jQuery.mobile.defaultPageTransition = "slide";
+  apex.jQuery.mobile.defaultDialogTransition = "pop";
+});
+</script>

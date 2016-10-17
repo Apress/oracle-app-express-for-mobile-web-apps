@@ -1,0 +1,25 @@
+// Set Width and Height of the chart to full screen
+$("#placeholder")
+    .css("width" , Math.round( .9 * window.innerWidth  )+"px")
+    .css("height", Math.round( .8 * window.innerHeight )+"px")
+    ;
+
+// Set the Flotchart options
+var options = {
+    bars   : { show: true },
+    points : { show: false },
+    xaxis  : { ticks:[[]] }
+};
+
+// Callback function : plot the chart using the JSON result string
+function onDataReceived( data ){
+    apex.jQuery.plot( $("#placeholder"), data, options);
+}
+
+// Call our RESTful webservice
+apex.jQuery.ajax({
+    url      : '/pls/apex/wsdemo/flotcharts/sales/',
+    method   : 'GET',
+    dataType : 'json',
+    success  : onDataReceived
+});

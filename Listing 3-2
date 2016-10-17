@@ -1,0 +1,39 @@
+/* Reduce size thumbnail*/
+.ui-li-thumb
+{
+width : 50px;
+  height : 50px;
+}
+/* Reduce li height with thumb */
+.ui-li-has-thumb
+{
+  height : 52px;
+}
+￼11
+Chapter 3 ■ presenting Data through List Views
+/* Reposition counter and icon */
+.ui-li-has-alt.ui-li-has-count .ui-li-count,
+.ui-btn-icon-right > .ui-btn-inner > .ui-icon
+{
+top : 20px;
+  right : 45px;
+}
+/* Move Text to left */
+.ui-li-has-thumb .ui-btn-inner a.ui-link-inherit
+{
+  padding-left : 55px;
+}
+/* Style Price and Description */
+.price
+{
+  position     : absolute;
+  right        : 45px;
+  top          : 37px;
+  font-size    : 11px;
+  color        : blue;
+}
+.description
+{
+  font-size    : 10px;
+  margin       : 0px -1px;
+}

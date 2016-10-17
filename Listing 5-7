@@ -1,0 +1,2 @@
+$s('P0_DEVICE_WIDTH' , Math.round( .9 * window.innerWidth ));
+$s('P0_DEVICE_HEIGHT', Math.round( .8 * window.innerHeight ));

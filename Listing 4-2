@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <link rel="stylesheet"
+        href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+  <style>* { font-size: 50px }</style>
+</head>
+<body>
+  <div data-role="page">
+   <div data-role="header" data-position="fixed">Grid Header</div>
+   <div data-role="content">
+    <div class="ui-grid-c">
+     <div class="ui-block-a">Row1-Col1</div>
+     <div class="ui-block-b">Row1-Col2</div>
+     <div class="ui-block-c">Row1-Col3</div>
+     <div class="ui-block-d">Row1-Col4</div>
+     <div class="ui-block-a">Row2-Col1</div>
+     <div class="ui-block-b">Row2-Col2</div>
+     <div class="ui-block-a">Row3-Col1</div>
+    </div>
+   </div>
+   <div data-role="footer" data-position="fixed">Grid Footer</div>
+  </div>
+ </body>
+</html>

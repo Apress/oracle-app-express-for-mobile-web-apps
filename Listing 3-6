@@ -1,0 +1,20 @@
+select c.customer_id
+,      c.cust_last_name
+,      c.cust_first_name
+,      c.cust_street_address1
+,      c.cust_city
+,      c.cust_state
+,      c.cust_postal_code
+,      c.phone_number1
+,      ( select count(*) from demo_orders o where o.customer_id = c.customer_id ) order_count
+,      ( select sum(order_total) from demo_orders o where o.customer_id = c.customer_id )
+order_value
+,      c.cust_last_name      ||
+       c.cust_first_name     ||
+       c.cust_street_address1||
+       c.cust_city           ||
+       c.cust_state          ||
+       c.cust_postal_code    ||
+       c.phone_number1       as search_field
+from demo_customers c
+order by c.cust_last_name

@@ -1,0 +1,27 @@
+/* Active class used as the "on" state across all themes
+---------------------------------------------------------------------------------------------------
+--------*/
+.ui-btn-active {
+        border: 1px solid #2373a5 /*{global-active-border}*/;
+        background: #387bbe /*{global-active-background-color}*/;
+        font-weight: bold;
+        color: #ffffff /*{global-active-color}*/;
+        cursor: pointer;
+        text-shadow: 2px /*{global-active-shadow-x}*/ 2px /*{global-active-shadow-y}*/ 20px
+/*{global-active-shadow-radius}*/ #122180 /*{global-active-shadow-color}*/;
+        text-decoration: none;
+        background-image: -webkit-gradient(linear, left top, left bottom, from( #326fac
+/*{global-active-background-start}*/), to( #3d86cf /*{global-active-background-end}*/));
+/* Saf4+, Chrome */
+        background-image: -webkit-linear-gradient( #326fac /*{global-active-background-start}*/,
+#3d86cf /*{global-active-background-end}*/); /* Chrome 10+, Saf5.1+ */
+        background-image:    -moz-linear-gradient( #326fac /*{global-active-background-start}*/,
+#3d86cf /*{global-active-background-end}*/); /* FF3.6 */
+        background-image:     -ms-linear-gradient( #326fac /*{global-active-background-start}*/,
+#3d86cf /*{global-active-background-end}*/); /* IE10 */
+        background-image:      -o-linear-gradient( #326fac /*{global-active-background-start}*/,
+#3d86cf /*{global-active-background-end}*/); /* Opera 11.10+ */
+        background-image:         linear-gradient( #326fac /*{global-active-background-start}*/,
+#3d86cf /*{global-active-background-end}*/);
+            font-family: Trebuchet MS, Arial, Helvetica /*{global-font-family}*/;
+}

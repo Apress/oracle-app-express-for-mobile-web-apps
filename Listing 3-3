@@ -1,0 +1,37 @@
+function swipe2Delete( pThis )
+    {
+      var $li = $( pThis.triggeringElement );
+
+      // This disables links on the page. If you click anywhere else, it removes the delete button 
+      $('li').bind('tap click', function(e){
+          $('.deleteButton').slideUp();
+          $('.deleteButton').remove();
+          $('li').unbind('tap click');
+          return false;
+      });
+
+      // Remove any existing Delete Button
+      $('.deleteButton').slideUp();
+      $('.deleteButton').remove();
+
+      var deleteButton = $('<a>Delete</a>')
+                          .attr( { 'class': 'deleteButton ui-btn-up-r'
+                                 ,   'id'   : $li.find('.id').text()
+                                // this tells me which list item to delete
+                                });
+      // add the button to the list item and show it
+      $li.prepend( deleteButton );
+      $('.deleteButton').slideDown();
+      // Have the delete button delete the item
+      $('.deleteButton').bind('tap click', function () {
+          event.preventDefault();
+          var $del = $(this);
+          $s('P13_PRODUCT_ID', $del.attr('id'));  // Fire my real deletion
+          if ( $del.parent().prev().attr('data-role')=='list-divider' &&
+               $del.parent().next().attr('data-role')=='list-divider'
+              ){ // Delete List Divider as well
+              $del.parent().prev().remove();
+          }
+          $del.parent().remove();  // remove the row
+  });
+}

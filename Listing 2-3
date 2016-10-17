@@ -1,0 +1,3 @@
+apex.jQuery.mobile.loadingMessageTextVisible=true; 
+apex.jQuery.mobile.loadingMessage="APEX is processing..."; 
+apex.jQuery.mobile.loadingMessageTheme="e";
